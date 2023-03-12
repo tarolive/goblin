@@ -67,22 +67,22 @@ func NewBackgroundColor(primary string, secondary string, secondaryGray string, 
 	return backgroundColor
 }
 
-func NewLightBackgroundColor() BackgroundColor {
+func NewLightThemeBackgroundColor() BackgroundColor {
 
 	var (
-		lightBackgroundColor = NewBackgroundColor("#FFFFFF", "#F0F0F0", "#D2D2D2", "#F5F5F5", "#B8BBBE")
+		lightThemeBackgroundColor = NewBackgroundColor("#FFFFFF", "#F0F0F0", "#D2D2D2", "#F5F5F5", "#B8BBBE")
 	)
 
-	return lightBackgroundColor
+	return lightThemeBackgroundColor
 }
 
-func NewDarkBackgroundColor() BackgroundColor {
+func NewDarkThemeBackgroundColor() BackgroundColor {
 
 	var (
-		darkBackgroundColor = NewBackgroundColor("#151515", "#212427", "#6A6E73", "#3C3F42", "#8A8D90")
+		darkThemeBackgroundColor = NewBackgroundColor("#151515", "#212427", "#6A6E73", "#3C3F42", "#8A8D90")
 	)
 
-	return darkBackgroundColor
+	return darkThemeBackgroundColor
 }
 
 func NewTextColor(primary string, secondary string) TextColor {
