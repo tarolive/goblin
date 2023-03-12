@@ -19,6 +19,14 @@ type TitleTypography struct {
 	Layout string
 }
 
+type BodyCopyTypography struct {
+	XS string
+	SM string
+	MD string
+	LG string
+	XL string
+}
+
 func NewHeadlineTypography(xs string, sm string, md string, lg string, xl string, xxl string) HeadlineTypography {
 
 	var (
@@ -57,4 +65,19 @@ func NewTitleTypography(card string, layout string) TitleTypography {
 	)
 
 	return titleTypography
+}
+
+func NewBodyCopyTypography(xs string, sm string, md string, lg string, xl string) BodyCopyTypography {
+
+	var (
+		bodyCopyTypography = BodyCopyTypography{
+			XS: xs,
+			SM: sm,
+			MD: md,
+			LG: lg,
+			XL: xl,
+		}
+	)
+
+	return bodyCopyTypography
 }
