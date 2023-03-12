@@ -43,15 +43,6 @@ func NewBrandColor(primary string, secondary string) BrandColor {
 	return brandColor
 }
 
-func NewRedBrandColor() BrandColor {
-
-	var (
-		redBrandColor = NewBrandColor("#EE0000", "#D40000")
-	)
-
-	return redBrandColor
-}
-
 func NewBackgroundColor(primary string, secondary string, secondaryGray string, tertiary string, tertiaryGray string) BackgroundColor {
 
 	var (
@@ -67,24 +58,6 @@ func NewBackgroundColor(primary string, secondary string, secondaryGray string, 
 	return backgroundColor
 }
 
-func NewLightThemeBackgroundColor() BackgroundColor {
-
-	var (
-		lightThemeBackgroundColor = NewBackgroundColor("#FFFFFF", "#F0F0F0", "#D2D2D2", "#F5F5F5", "#B8BBBE")
-	)
-
-	return lightThemeBackgroundColor
-}
-
-func NewDarkThemeBackgroundColor() BackgroundColor {
-
-	var (
-		darkThemeBackgroundColor = NewBackgroundColor("#151515", "#212427", "#6A6E73", "#3C3F42", "#8A8D90")
-	)
-
-	return darkThemeBackgroundColor
-}
-
 func NewTextColor(primary string, secondary string) TextColor {
 
 	var (
@@ -95,22 +68,4 @@ func NewTextColor(primary string, secondary string) TextColor {
 	)
 
 	return textColor
-}
-
-func NewLightThemeTextColor() TextColor {
-
-	var (
-		lightThemeTextColor = NewTextColor("#151515", "#6A6E73")
-	)
-
-	return lightThemeTextColor
-}
-
-func NewDarkThemeTextColor() TextColor {
-
-	var (
-		darkThemeTextColor = NewTextColor("#FFFFFF", "#D2D2D2")
-	)
-
-	return darkThemeTextColor
 }
