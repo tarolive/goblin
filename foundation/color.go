@@ -96,3 +96,21 @@ func NewTextColor(primary string, secondary string) TextColor {
 
 	return textColor
 }
+
+func NewLightThemeTextColor() TextColor {
+
+	var (
+		lightThemeTextColor = NewTextColor("#151515", "#6A6E73")
+	)
+
+	return lightThemeTextColor
+}
+
+func NewDarkThemeTextColor() TextColor {
+
+	var (
+		darkThemeTextColor = NewTextColor("#FFFFFF", "#D2D2D2")
+	)
+
+	return darkThemeTextColor
+}
