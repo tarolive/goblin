@@ -75,3 +75,24 @@ func NewLightBackgroundColor() BackgroundColor {
 
 	return lightBackgroundColor
 }
+
+func NewDarkBackgroundColor() BackgroundColor {
+
+	var (
+		darkBackgroundColor = NewBackgroundColor("#151515", "#212427", "#6A6E73", "#3C3F42", "#8A8D90")
+	)
+
+	return darkBackgroundColor
+}
+
+func NewTextColor(primary string, secondary string) TextColor {
+
+	var (
+		textColor = TextColor{
+			Primary:   primary,
+			Secondary: secondary,
+		}
+	)
+
+	return textColor
+}
