@@ -14,6 +14,11 @@ type BlockquoteTypography struct {
 	LG string
 }
 
+type TitleTypography struct {
+	Card   string
+	Layout string
+}
+
 func NewHeadlineTypography(xs string, sm string, md string, lg string, xl string, xxl string) HeadlineTypography {
 
 	var (
@@ -40,4 +45,16 @@ func NewBlockquoteTypography(sm string, lg string) BlockquoteTypography {
 	)
 
 	return blockquoteTypography
+}
+
+func NewTitleTypography(card string, layout string) TitleTypography {
+
+	var (
+		titleTypography = TitleTypography{
+			Card:   card,
+			Layout: layout,
+		}
+	)
+
+	return titleTypography
 }
