@@ -30,3 +30,24 @@ type AlertColor struct {
 	PrimaryBackground string
 	Secondary         string
 }
+
+func NewBrandColor(primary string, secondary string) BrandColor {
+
+	var (
+		brandColor = BrandColor{
+			Primary:   primary,
+			Secondary: secondary,
+		}
+	)
+
+	return brandColor
+}
+
+func NewRedBrandColor() BrandColor {
+
+	var (
+		redBrandColor = NewBrandColor("#EE0000", "#D40000")
+	)
+
+	return redBrandColor
+}
