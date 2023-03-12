@@ -70,7 +70,7 @@ func NewBackgroundColor(primary string, secondary string, secondaryGray string, 
 func NewLightBackgroundColor() BackgroundColor {
 
 	var (
-		lightBackgroundColor = NewBackgroundColor("", "", "", "", "")
+		lightBackgroundColor = NewBackgroundColor("#FFFFFF", "#F0F0F0", "#D2D2D2", "#F5F5F5", "#B8BBBE")
 	)
 
 	return lightBackgroundColor
