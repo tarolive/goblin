@@ -12,3 +12,21 @@ type BackgroundColor struct {
 	Tertiary      string
 	TertiaryGray  string
 }
+
+type TextColor struct {
+	Primary   string
+	Secondary string
+}
+
+type LinkColor struct {
+	Primary             string
+	PrimaryBackground   string
+	Secondary           string
+	SecondaryBackground string
+}
+
+type AlertColor struct {
+	Primary           string
+	PrimaryBackground string
+	Secondary         string
+}
