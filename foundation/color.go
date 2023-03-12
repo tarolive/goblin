@@ -51,3 +51,27 @@ func NewRedBrandColor() BrandColor {
 
 	return redBrandColor
 }
+
+func NewBackgroundColor(primary string, secondary string, secondaryGray string, tertiary string, tertiaryGray string) BackgroundColor {
+
+	var (
+		backgroundColor = BackgroundColor{
+			Primary:       primary,
+			Secondary:     secondary,
+			SecondaryGray: secondaryGray,
+			Tertiary:      tertiary,
+			TertiaryGray:  tertiaryGray,
+		}
+	)
+
+	return backgroundColor
+}
+
+func NewLightBackgroundColor() BackgroundColor {
+
+	var (
+		lightBackgroundColor = NewBackgroundColor("", "", "", "", "")
+	)
+
+	return lightBackgroundColor
+}
