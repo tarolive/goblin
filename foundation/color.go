@@ -69,3 +69,30 @@ func NewTextColor(primary string, secondary string) TextColor {
 
 	return textColor
 }
+
+func NewLinkColor(primary string, primaryBackground string, secondary string, secondaryBackground string) LinkColor {
+
+	var (
+		linkColor = LinkColor{
+			Primary:             primary,
+			PrimaryBackground:   primaryBackground,
+			Secondary:           secondary,
+			SecondaryBackground: secondaryBackground,
+		}
+	)
+
+	return linkColor
+}
+
+func NewAlertColor(primary string, primaryBackground string, secondary string) AlertColor {
+
+	var (
+		alertColor = AlertColor{
+			Primary:           primary,
+			PrimaryBackground: primaryBackground,
+			Secondary:         secondary,
+		}
+	)
+
+	return alertColor
+}
