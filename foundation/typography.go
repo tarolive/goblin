@@ -9,6 +9,11 @@ type HeadlineTypography struct {
 	XXL string
 }
 
+type BlockquoteTypography struct {
+	SM string
+	LG string
+}
+
 func NewHeadlineTypography(xs string, sm string, md string, lg string, xl string, xxl string) HeadlineTypography {
 
 	var (
@@ -23,4 +28,16 @@ func NewHeadlineTypography(xs string, sm string, md string, lg string, xl string
 	)
 
 	return headlineTypography
+}
+
+func NewBlockquoteTypography(sm string, lg string) BlockquoteTypography {
+
+	var (
+		blockquoteTypography = BlockquoteTypography{
+			SM: sm,
+			LG: lg,
+		}
+	)
+
+	return blockquoteTypography
 }
